@@ -1,0 +1,187 @@
+*{ 
+    --corFont01 : white;
+    margin: 0;
+    overflow-x: hidden;
+}
+body{
+    background-color: #080A0B;
+}
+
+.dflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionInicio{
+    margin-top: 50px;
+    gap: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100vw;
+}
+
+.logo{
+    width: 259px;
+    height: 85px;
+}
+.gap{
+    gap:10px;
+}
+
+.imgInicioBorda{
+    padding-left: 10px;
+    border-left: 2px solid var(--corFont01);
+}
+
+.dflex.gap > p{
+    font-family: sans-serif;
+    font-weight: 600;
+    color: var(--corFont01);
+}
+
+.itensMenu{
+   gap: 10px; 
+}
+.menu{
+    font-family: sans-serif;
+    font-weight: 600;
+    color: var(--corFont01);
+    gap: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textHome{
+    font-size: 40px;
+    width: 100%;
+    letter-spacing: 5px;
+    font-stretch: expanded;
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--corFont01);
+    /* border: 1px solid red ; */
+    margin-top: 200px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.fundoIMG{
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1200px;
+    background-image: url("Img/BG\ photo.png");
+}
+
+.fundoIMG > .textHome > button{
+    margin-top: 20px;
+    font-size: 20px;
+    margin: 30px;
+    font-family: sans-serif;
+    color: #3DB8A5;
+    padding: 20px 35px;
+    background: #3db8a648;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 1px solid #3DB8A5;
+    transition: all 0.2s linear;
+}
+
+.valor{
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: 2px solid #3DB8A5
+}
+
+button:hover{
+    cursor: pointer;
+    scale: 1.2;
+}
+
+.containerSegundo{
+    width: 100%;
+    height: 980px ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(Img/bg_02.png);
+
+
+}
+
+
+.ladoEsquerdo{ 
+    margin-right: 50px;
+    max-width: 25%;
+    color: var(--corFont01);
+}
+
+
+.ladoEsquerdo > h1{
+    border-bottom: 2px solid white;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 4px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.ladoEsquerdo > p{
+    margin-top: 5px;
+    font-family: sans-serif;
+}
+
+.containerImg{
+    background: none
+}
+
+.containerImg > button{
+    margin: 20px;
+    border: none;
+    background: none;
+    color: white;
+}
+
+
+.conteinerTerceiro{
+    background: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0;
+    width: 100%;
+    height: 900px;
+    background-image: url(Img/img_bg.png);
+}
+
+.conteinerFeatures{
+
+    max-width: 50vh;
+}
+
+
+.ponto[data-pontoSelecionado="1"] {
+    background-color: #fff;
+}
+
+.ponto[data-pontoSelecionado="0"] {
+    background-color: transparent;
+}
+
+.containerTexto p {
+    color: #fff;
+    overflow: hidden;
+    height: 0px;
+    transition: height 2s ease-in-out;
+}
+.containerTexto h3 {
+    color: green;
+}
+
+.containerTexto.ativo p {
+    height: 300px;
+    border: 1px solid red;
+}
